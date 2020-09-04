@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+
+  go-docker:
+    image: glpkeerthana/server-repo:v1.0.0
+    container_name: go-api
+    restart: always
+    
+   //go through this links for other details
+   
+   https://stackoverflow.com/questions/63716964/deploy-an-application-with-dockerised-frontend-and-dockerise-backend-images?answertab=active#tab-top
