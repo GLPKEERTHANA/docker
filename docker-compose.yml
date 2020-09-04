@@ -1,0 +1,25 @@
+
+//It is a docker compose file to run front end and back end in one go
+
+version: "3"
+services:
+    frontend:
+        container_name: reactimage
+        build:
+            context: ./react_feed
+            dockerfile: Dockerfile
+        image: reactimage
+        ports:
+            - "3000:3000"
+        stdin_open: true
+    backend:
+        container_name: go-docker
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+        image: go-docker
+        ports:
+            - "8000:8000"
+ //run using this command    
+ //docker-compose up  
+ //docker-compose down
