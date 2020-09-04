@@ -1,0 +1,28 @@
+1.To build and run the server::
+
+ docker run -p 8080:8080 --network=host go-docker
+ docker build -t go-docker .
+ 
+ go-docker is the image name.
+ 
+2. To run and build the react app
+ 
+ docker run -it -p 3000:3000 reactimage3
+ docker build -t reactimage3 .
+ 
+3. Kill a particular port used by react 
+ 
+ npx kill-port 3000
+ 
+4.Know about docker images and containers
+ 
+docker images
+docker ps -a
+
+Frontend development netlify
+Backend heroku
+
+NPM commands
+1.npm start
+2.npm install
+3.npm run build
